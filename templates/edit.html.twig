@@ -1,0 +1,9 @@
+{% extends "base.html.twig" %}
+{% block title %}
+  Lista de Tarefas
+{% endblock %}
+{% block body %}
+    <h1> Alterar a Tarefa {{ task.id }}</h1>
+   {{ include("_form.html.twig") }}
+   {{ include("_delete.html.twig") }}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block title %}
+  Lista de Tarefas
+{% endblock %}
+{% block body %}
+  <div class="col-sm-12">
+    <h1> Detalhe da Tarefa {{ task.id }}</h1>
+  </div>
+  <div class="col-sm-12">
+    <p>
+      <strong>Titulo: </strong> {{ task.title }} <br>
+      <strong>Descrição: </strong> {{ task.description }} <br>
+      <strong>Data: </strong>
+    </p>
+  </div>
+{% endblock %}
